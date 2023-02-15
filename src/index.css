@@ -1,13 +1,98 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Varela+Round&display=swap');
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+padding: 0;
+box-sizing: border-box;
+
+}
+body{
+  background: #e6ecca;
+
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #a2c11c;
+  height: 10vh;
+  font-family: 'Lobster', cursive;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 15px;
+}
+img{
+  border-radius: 50px;
+
+}
+.container{
+ padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+.component_container{
+  margin: auto;
+  width: 30%;
+  background:white;
+  padding: 10px;
+position: relative;
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+}
+input, textarea{
+  outline: none;
+  border: none;
+  padding: 10px 5px;
+  font-size: 1.5rem;
+  font-family: 'Varela Round', sans-serif;
+  resize: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.button {
+  position: absolute;
+  bottom: -23px;
+cursor: pointer;
+  background: #a2c11c;
+  border: none;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  padding: 10px 13px;
+  transition: .5s;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 3px 10px;
+}
+.button:hover{
+  background: black;
+  color: #a2c11c;
+}
+.notes_container{
+
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+.note{
+  position: relative;
+  background: white;
+  padding: 15px;
+  padding-right: 6vw;
+  border-radius: 7px;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+}
+.note h2,h3{
+  padding: 5px;
+}
+.del-button{
+position: absolute;
+bottom: 10px;
+right: 20px;
+  background-color: white;
+  color: #a2c11c;
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+transition: .3s;
+}
+.del-button:hover{
+  color: red;
 }
